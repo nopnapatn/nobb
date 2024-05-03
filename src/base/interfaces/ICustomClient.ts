@@ -4,4 +4,5 @@ export default interface ICustomClient {
   config: IConfig
 
   Init(): void
+  LoadHanders(): void
 }
