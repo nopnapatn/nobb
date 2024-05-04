@@ -1,5 +1,12 @@
 export interface IConfig {
   token: string
   clientId: string
-  guildId: string
+  mongoUrl: string
+
+  developerUserId: string[]
+
+  devToken: string
+  devClientId: string
+  devGuildId: string
+  devMongoUrl: string
 }

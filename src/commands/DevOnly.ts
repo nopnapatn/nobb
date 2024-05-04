@@ -10,15 +10,14 @@ import Category from "../base/enums/Category"
 export default class HealthCheck extends Command {
   constructor(client: CustomClient) {
     super(client, {
-      name: "health",
-      description: "Command for check health.",
+      name: "devonly",
+      description: "Command for check health (dev).",
       category: Category.Utilities,
-      default_member_permissions:
-        PermissionsBitField.Flags.UseApplicationCommands,
+      default_member_permissions: PermissionsBitField.Flags.Administrator,
       dm_permission: false,
       options: [],
       cooldown: 3,
-      dev: false,
+      dev: true,
     })
   }
 
