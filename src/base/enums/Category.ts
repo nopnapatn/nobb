@@ -1,5 +1,6 @@
 enum Category {
   Developer = "Developer",
+  Administrator = "Administrator",
   Utilities = "Utilities",
 }
 
