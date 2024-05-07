@@ -1,7 +1,7 @@
 import { Collection, Events, REST, Routes } from "discord.js"
-import Command from "../../base/classes/Command"
-import CustomClient from "../../base/classes/CustomClient"
-import Event from "../../base/classes/Event"
+import Command from "../../base/classes/commands"
+import CustomClient from "../../base/classes/custom-client"
+import Event from "../../base/classes/events"
 
 export default class Ready extends Event {
   constructor(client: CustomClient) {

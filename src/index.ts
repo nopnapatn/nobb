@@ -1,3 +1,3 @@
-import CustomClient from "./base/classes/CustomClient"
+import CustomClient from "./base/classes/custom-client"
 
 new CustomClient().Init()

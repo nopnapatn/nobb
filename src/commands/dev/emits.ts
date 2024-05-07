@@ -6,9 +6,9 @@ import {
   Guild,
   PermissionsBitField,
 } from "discord.js"
-import Command from "../../base/classes/Command"
-import CustomClient from "../../base/classes/CustomClient"
-import Category from "../../base/enums/Category"
+import Command from "../../base/classes/commands"
+import CustomClient from "../../base/classes/custom-client"
+import Category from "../../base/enums/categories"
 
 export default class Emit extends Command {
   constructor(client: CustomClient) {

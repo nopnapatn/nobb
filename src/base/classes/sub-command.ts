@@ -1,7 +1,7 @@
 import { CacheType, ChatInputCommandInteraction } from "discord.js"
-import ISubCommand from "../interfaces/ISubCommand"
-import ISubCommandOptions from "../interfaces/ISubCommandOptions"
-import CustomClient from "./CustomClient"
+import ISubCommand from "../interfaces/sub-command"
+import ISubCommandOptions from "../interfaces/sub-command-options"
+import CustomClient from "./custom-client"
 
 export default class SubCommand implements ISubCommand {
   client: CustomClient

@@ -3,9 +3,9 @@ import {
   EmbedBuilder,
   TextChannel,
 } from "discord.js"
-import CustomClient from "../../base/classes/CustomClient"
-import SubCommand from "../../base/classes/SubCommand"
-import GuildConfig from "../../base/schema/GuildConfig"
+import CustomClient from "../../../base/classes/custom-client"
+import SubCommand from "../../../base/classes/sub-command"
+import GuildConfig from "../../../base/schema/guild-config"
 
 export default class BanRemove extends SubCommand {
   constructor(client: CustomClient) {

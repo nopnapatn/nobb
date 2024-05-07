@@ -1,18 +1,22 @@
-import { ChatInputCommandInteraction, EmbedBuilder } from "discord.js"
-import CustomClient from "../../base/classes/CustomClient"
-import SubCommand from "../../base/classes/SubCommand"
-import GuildConfig from "../../base/schema/GuildConfig"
+import {
+  ChatInputCommandInteraction,
+  EmbedBuilder,
+  TextChannel,
+} from "discord.js"
+import CustomClient from "../../../base/classes/custom-client"
+import SubCommand from "../../../base/classes/sub-command"
+import GuildConfig from "../../../base/schema/guild-config"
 
-export default class LogsToggle extends SubCommand {
+export default class LogsSet extends SubCommand {
   constructor(client: CustomClient) {
     super(client, {
-      name: "logs.toggle",
+      name: "logs.set",
     })
   }
 
   async Execute(interaction: ChatInputCommandInteraction) {
     const logType = interaction.options.getString("log-type")
-    const enabled = interaction.options.getBoolean("toggle")
+    const channel = interaction.options.getChannel("channel") as TextChannel
 
     await interaction.deferReply({ ephemeral: true })
 
@@ -23,7 +27,7 @@ export default class LogsToggle extends SubCommand {
         guild = await GuildConfig.create({ guildId: interaction.guildId })
 
       //@ts-ignore
-      guild.logs[`${logType}`].enabled = enabled
+      guild.logs[`${logType}`].channelId = channel.id
 
       await guild.save()
 
@@ -32,7 +36,7 @@ export default class LogsToggle extends SubCommand {
           new EmbedBuilder()
             .setColor("Green")
             .setDescription(
-              `✅ ${enabled ? "Enabled" : "Disabled"} \`${logType}\` logs!`,
+              `✅ Updated \`${logType}\` logs to send to ${channel}`,
             ),
         ],
       })

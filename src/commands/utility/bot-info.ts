@@ -8,9 +8,9 @@ import {
 } from "discord.js"
 import ms from "ms"
 import os from "os"
-import Command from "../../base/classes/Command"
-import CustomClient from "../../base/classes/CustomClient"
-import Category from "../../base/enums/Category"
+import Command from "../../base/classes/commands"
+import CustomClient from "../../base/classes/custom-client"
+import Category from "../../base/enums/categories"
 
 const { version, dependencies } = require(`${process.cwd()}/package.json`)
 

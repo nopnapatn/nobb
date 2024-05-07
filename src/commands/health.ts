@@ -3,21 +3,22 @@ import {
   EmbedBuilder,
   PermissionsBitField,
 } from "discord.js"
-import Command from "../base/classes/Command"
-import CustomClient from "../base/classes/CustomClient"
-import Category from "../base/enums/Category"
+import Command from "../base/classes/commands"
+import CustomClient from "../base/classes/custom-client"
+import Category from "../base/enums/categories"
 
 export default class HealthCheck extends Command {
   constructor(client: CustomClient) {
     super(client, {
-      name: "devonly",
-      description: "Command for check health (dev).",
+      name: "health",
+      description: "Command for check health.",
       category: Category.Utilities,
-      default_member_permissions: PermissionsBitField.Flags.Administrator,
+      default_member_permissions:
+        PermissionsBitField.Flags.UseApplicationCommands,
       dm_permission: false,
       options: [],
       cooldown: 3,
-      dev: true,
+      dev: false,
     })
   }
 

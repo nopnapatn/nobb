@@ -1,7 +1,7 @@
 import { Collection } from "discord.js"
-import Command from "../classes/Command"
-import SubCommand from "../classes/SubCommand"
-import { IConfig } from "./IConfig"
+import Command from "../classes/commands"
+import SubCommand from "../classes/sub-command"
+import { IConfig } from "./config"
 
 export default interface ICustomClient {
   config: IConfig

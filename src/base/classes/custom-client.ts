@@ -1,11 +1,11 @@
 import { Client, Collection, GatewayIntentBits } from "discord.js"
 import { connect } from "mongoose"
 import { ENV } from "../../config"
-import { IConfig } from "../interfaces/IConfig"
-import ICustomClient from "../interfaces/ICustomClient"
-import Command from "./Command"
-import Handler from "./Handler"
-import SubCommand from "./SubCommand"
+import { IConfig } from "../interfaces/config"
+import ICustomClient from "../interfaces/custom-client"
+import Command from "./commands"
+import Handler from "./handlers"
+import SubCommand from "./sub-command"
 
 export default class CustomClient extends Client implements ICustomClient {
   config: IConfig

@@ -1,7 +1,7 @@
 import { EmbedBuilder, Events, Guild } from "discord.js"
-import CustomClient from "../../base/classes/CustomClient"
-import Event from "../../base/classes/Event"
-import GuildConfig from "../../base/schema/GuildConfig"
+import CustomClient from "../../base/classes/custom-client"
+import Event from "../../base/classes/events"
+import GuildConfig from "../../base/schema/guild-config"
 
 export default class GuildCreate extends Event {
   constructor(client: CustomClient) {
