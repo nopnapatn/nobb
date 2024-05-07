@@ -7,9 +7,9 @@ import {
   PermissionFlagsBits,
   TextChannel,
 } from "discord.js"
-import Command from "../../base/classes/commands"
+import Command from "../../base/classes/command"
 import CustomClient from "../../base/classes/custom-client"
-import Category from "../../base/enums/categories"
+import Category from "../../base/enums/category"
 import GuildConfig from "../../base/schema/guild-config"
 
 export default class Kick extends Command {

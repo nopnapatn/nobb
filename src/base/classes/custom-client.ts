@@ -3,7 +3,7 @@ import { connect } from "mongoose"
 import { ENV } from "../../config"
 import { IConfig } from "../interfaces/config"
 import ICustomClient from "../interfaces/custom-client"
-import Command from "./commands"
+import Command from "./command"
 import Handler from "./handlers"
 import SubCommand from "./sub-command"
 

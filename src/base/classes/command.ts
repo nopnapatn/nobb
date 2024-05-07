@@ -3,7 +3,7 @@ import {
   CacheType,
   ChatInputCommandInteraction,
 } from "discord.js"
-import Category from "../enums/categories"
+import Category from "../enums/category"
 import ICommand from "../interfaces/command"
 import ICommandOptions from "../interfaces/command-options"
 import CustomClient from "./custom-client"

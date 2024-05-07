@@ -3,9 +3,9 @@ import {
   ChannelType,
   PermissionFlagsBits,
 } from "discord.js"
-import Command from "../../../base/classes/commands"
+import Command from "../../../base/classes/command"
 import CustomClient from "../../../base/classes/custom-client"
-import Category from "../../../base/enums/categories"
+import Category from "../../../base/enums/category"
 
 export default class Logs extends Command {
   constructor(client: CustomClient) {

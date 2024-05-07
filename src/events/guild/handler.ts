@@ -4,9 +4,9 @@ import {
   EmbedBuilder,
   Events,
 } from "discord.js"
-import Command from "../../base/classes/commands"
+import Command from "../../base/classes/command"
 import CustomClient from "../../base/classes/custom-client"
-import Event from "../../base/classes/events"
+import Event from "../../base/classes/event"
 
 export default class CommandHandler extends Event {
   constructor(client: CustomClient) {

@@ -1,5 +1,5 @@
 import { Collection } from "discord.js"
-import Command from "../classes/commands"
+import Command from "../classes/command"
 import SubCommand from "../classes/sub-command"
 import { IConfig } from "./config"
 

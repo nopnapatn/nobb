@@ -1,9 +1,9 @@
 import { glob } from "glob"
 import path from "path"
 import IHandler from "../interfaces/handler"
-import Command from "./commands"
+import Command from "./command"
 import CustomClient from "./custom-client"
-import Event from "./events"
+import Event from "./event"
 
 export default class Handler implements IHandler {
   client: CustomClient

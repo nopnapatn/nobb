@@ -3,7 +3,7 @@ import {
   ChatInputCommandInteraction,
 } from "discord.js"
 import CustomClient from "../classes/custom-client"
-import Category from "../enums/categories"
+import Category from "../enums/category"
 
 export default interface ICommand {
   client: CustomClient
