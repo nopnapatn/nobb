@@ -15,7 +15,7 @@ export default class UserInfo extends Command {
     super(client, {
       name: "userinfo",
       description: "Get a users info",
-      category: Category.Utilities,
+      category: Category.Economy,
       options: [
         {
           name: "target",

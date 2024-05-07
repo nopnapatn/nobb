@@ -41,7 +41,7 @@ export default class Kick extends Command {
       default_member_permissions: PermissionFlagsBits.KickMembers,
       dm_permission: false,
       cooldown: 3,
-      dev: true,
+      dev: false,
     })
   }
 

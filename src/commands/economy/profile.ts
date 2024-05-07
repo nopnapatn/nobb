@@ -16,7 +16,7 @@ export default class Profile extends Command {
     super(client, {
       name: "profile",
       description: "Get a users profile",
-      category: Category.Utilities,
+      category: Category.Economy,
       options: [
         {
           name: "target",

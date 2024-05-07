@@ -19,7 +19,7 @@ export default class BotInfo extends Command {
     super(client, {
       name: "botinfo",
       description: "Get a bots info",
-      category: Category.Utilities,
+      category: Category.Economy,
       options: [],
       default_member_permissions:
         PermissionsBitField.Flags.UseApplicationCommands,
